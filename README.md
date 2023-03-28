@@ -8,6 +8,6 @@ Este proyecto se presentará en la actividad [Café con](https://humanidadesdigi
 
 ## Referencias
 
-- [Collections as Data]https://collectionsasdata.github.io/
+- [Collections as Data](https://collectionsasdata.github.io/)
 - [International GLAM Labs Community](https://glamlabs.io/)
 - [Impact Centre of Competence](https://www.digitisation.eu/)
