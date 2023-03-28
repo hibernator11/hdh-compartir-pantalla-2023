@@ -14,6 +14,8 @@ Este proyecto se presentará en la actividad [Café con](https://humanidadesdigi
 
 ## Referencias
 
+- [BVMC Labs](https://data.cervantesvirtual.com)
 - [Collections as Data](https://collectionsasdata.github.io/)
 - [International GLAM Labs Community](https://glamlabs.io/)
 - [Impact Centre of Competence](https://www.digitisation.eu/)
+- [GLAM Workbench](https://glam-workbench.net/)
