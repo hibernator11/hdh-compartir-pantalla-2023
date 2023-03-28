@@ -1,6 +1,10 @@
 # hdh-cafe-con-2023
 Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
 
+<img style="float: right;" src="imagenes/logo-bvmc.png" width="180px">
+<img style="float: right;margin-right:10px;" src="imagenes/logo-ua.jpg" width="200px">
+<img style="float: right;margin-right:10px;margin-top: -10px;" src="imagenes/logo-hdh.png" width="120px">
+
 ## Introducción
 
 Este proyecto se presentará en la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) a modo de ejemplo del trabajo realizado sobre [colecciones como datos](https://collectionsasdata.github.io/) en el proyecto [BVMC Labs](https://data.cervantesvirtual.com) de la [Biblioteca Virtual Miguel de Cervantes](https://www.cervantesvirtual.com).
