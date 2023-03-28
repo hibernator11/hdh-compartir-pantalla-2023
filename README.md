@@ -1,9 +1,7 @@
 # hdh-cafe-con-2023
 Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
 
-<img style="float: right;" src="imagenes/logo-bvmc.png" width="180px">
-<img style="float: right;margin-right:10px;" src="imagenes/logo-ua.jpg" width="200px">
-<img style="float: right;margin-right:10px;margin-top: -10px;" src="imagenes/logo-hdh.png" width="120px">
+<p><img style="float: right;" src="imagenes/logo-bvmc.png" width="180px"><img style="float: right;margin-right:10px;" src="imagenes/logo-ua.jpg" width="200px"><img style="float: right;margin-right:10px;margin-top: -10px;" src="imagenes/logo-hdh.png" width="120px"></p>
 
 ## Introducción
 
