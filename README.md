@@ -3,6 +3,8 @@ Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digita
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
+[![DOI](https://zenodo.org/badge/620414822.svg)](https://zenodo.org/badge/latestdoi/620414822)
+
 <img src="imagenes/logos.png">
 
 ## Introducción
