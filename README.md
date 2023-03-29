@@ -42,6 +42,7 @@ WHERE {
 - [Impact Centre of Competence](https://www.digitisation.eu/)
 - [GLAM Workbench](https://glam-workbench.net/)
 - Migration of a library catalogue into RDA linked open data. Semantic Web 9(4): 481-491 (2018). https://doi.org/10.3233/SW-170274
+- Gustavo Candela. Towards a semantic approach in GLAM Labs: the case of the Data Foundry at the National Library of Scotland. CoRR abs/2301.11182. https://doi.org/10.48550/arXiv.2301.11182
 
 
 ## Licencia y términos de uso
