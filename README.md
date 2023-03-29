@@ -34,12 +34,6 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png">
 
-
-## Licencia y términos de uso
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
-
-
 ## Información adicional
 
 - [BVMC Labs](https://data.cervantesvirtual.com)
@@ -50,4 +44,7 @@ WHERE {
 - Migration of a library catalogue into RDA linked open data. Semantic Web 9(4): 481-491 (2018). https://doi.org/10.3233/SW-170274
 
 
+## Licencia y términos de uso
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
 
