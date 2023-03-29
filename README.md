@@ -17,6 +17,24 @@ Gracias al enriquecimiento, existe la posibilidad de explorar nuevas formas de a
 
 <img src="imagenes/buscador.png" width="60%">
 
+## Representación de las nacionalidades de los autores
+El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. El siguiente [enlace](https://w.wiki/6WRC) permite ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
+
+```
+#defaultView:Map
+SELECT DISTINCT ?autor ?autorLabel (SAMPLE(?imagen) as ?img) (SAMPLE(?coordenadas) as ?co)
+WHERE {   
+       ?autor wdt:P2799 ?idbvmc.
+       ?autor wdt:P27 ?pais .
+       OPTIONAL {?pais wdt:P625 ?coordenadas.}
+       OPTIONAL {?autor wdt:P18 ?imagen .}      
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "es" }
+} GROUP BY ?autor ?autorLabel
+```
+
+<img src="imagenes/mapa-autores.png">
+
+
 ## Licencia y términos de uso
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
