@@ -13,7 +13,7 @@ La Biblioteca Virtual Miguel de Cervantes publicó su catálogo de metadatos com
 
 Gracias al enriquecimiento, existe la posibilidad de explorar nuevas formas de acceso al catálogo por medio de nuevas propiedades proporcionadas por Wikidata o visualizaciones.
 
-<img src="imagenes/buscador.png">
+<img src="imagenes/buscador.png" width="75%">
 
 ## Licencia y términos de uso
 
