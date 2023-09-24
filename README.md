@@ -1,4 +1,4 @@
-# hdh-cafe-con-2023
+# Uso de Wikidata en bibliotecas
 Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
