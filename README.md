@@ -36,6 +36,12 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png">
 
+## Miembros de la International GLAM Labs community
+La International GLAM Labs community cuenta con un listado de miembros que se muestran en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma se puede obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
+
+<img src="imagenes/mapa-glamlabs.png">
+
+
 ## Información adicional
 
 - Gustavo Candela. Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science. Just Accepted (2023). https://doi.org/10.1177/01655515231174386
