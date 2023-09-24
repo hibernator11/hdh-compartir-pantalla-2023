@@ -44,8 +44,9 @@ WHERE {
 - [Impact Centre of Competence](https://www.digitisation.eu/)
 - [GLAM Workbench](https://glam-workbench.net/)
 - Migration of a library catalogue into RDA linked open data. Semantic Web 9(4): 481-491 (2018). https://doi.org/10.3233/SW-170274
-- Gustavo Candela. Towards a semantic approach in GLAM Labs: the case of the Data Foundry at the National Library of Scotland. CoRR abs/2301.11182. https://doi.org/10.48550/arXiv.2301.11182
-
+- Candela, G. (2023). Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science, 0(0). https://doi.org/10.1177/01655515231174386
+- Gustavo Candela, Javier Pereda, Dolores Sáez, Pilar Escobar, Alexander Sánchez, Andrés Villa Torres, Albert A. Palacios, Kelly McDonough, and Patricia Murrieta-Flores. 2023. An ontological approach for unlocking the Colonial Archive. J. Comput. Cult. Herit. Just Accepted (April 2023). https://doi.org/10.1145/3594727
+- Gustavo Candela. An automatic data quality approach to assess semantic data from cultural heritage institutions. J. Assoc. Inf. Sci. Technol. 74(7): 866-878 (2023). https://doi.org/10.1002/asi.24761
 
 ## Licencia y términos de uso
 
