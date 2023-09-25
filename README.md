@@ -36,11 +36,13 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png">
 
-## Miembros de la International GLAM Labs community
-La International GLAM Labs community cuenta con un listado de miembros que se muestran en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma se puede obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
+## Miembros de la International GLAM Labs Community
+La International GLAM Labs Community cuenta con un listado de miembros que se muestran en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma se puede obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
 
 <img src="imagenes/mapa-glamlabs.png">
 
+## Proyectos basados en Jupyter Notebooks en instituciones GLAM
+Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en wikidata enlazando a las colecciones que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
 
 ## Información adicional
 
