@@ -1,5 +1,5 @@
 # Uso de Wikidata en bibliotecas
-Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
+Proyecto presentado en la actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
@@ -9,7 +9,8 @@ Proyecto para actividad HDH "Café con" con la Asociación de Humanidades Digita
 
 ## Introducción
 
-Este proyecto se presentará en la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) a modo de ejemplo del trabajo realizado sobre [colecciones como datos](https://collectionsasdata.github.io/) en el proyecto [BVMC Labs](https://data.cervantesvirtual.com) de la [Biblioteca Virtual Miguel de Cervantes](https://www.cervantesvirtual.com).
+Este proyecto para la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) Se introduce Wikidata como plataforma para facilitar el acceso, enriquecimiento y el aumento de la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos tabulares y visualizaciones.
+
 
 ## Datos abiertos y enlazados
 
