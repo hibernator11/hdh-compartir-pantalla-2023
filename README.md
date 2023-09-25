@@ -105,6 +105,19 @@ WHERE {
 <img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
 
 ## Consultas federadas
+Las consultas federadas permiten acceder a otros repositorios de datos para recuperar y filtrar información. Por ejemplo, el repositorio de datos abiertos y enlazados de la Biblioteca Virtual Miguel de Cervantes está federado con Wikidata. Esto significa que desde Wikidata y a través del lenguaje de consulta SPARQL, podemos acceder al repositorio de la BVMC. Por ejemplo, podríamos estar interesados en recuperar las obras en la BVMC a partir de un autor de Wikidata. También, nos podría interesar recuperar las obras de autores que han nacido en país particular. A continuación, se incluyen varios ejemplos.
+
+```
+SELECT ?workLabel WHERE {
+  wd:Q165257 wdt:P2799 ?id 
+  BIND(uri(concat("https://data.cervantesvirtual.com/person/", ?id)) as ?bvmcID) 
+  SERVICE <http://data.cervantesvirtual.com/openrdf-sesame/repositories/data> {
+    ?bvmcID <http://rdaregistry.info/Elements/a/otherPFCManifestationOf> ?work .
+    ?work rdfs:label ?workLabel        
+  }
+}
+```
+[Obras de Lope de Vega (wd:Q165257)](https://w.wiki/7Yvd)
 
 ## Información adicional
 
