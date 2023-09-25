@@ -37,7 +37,7 @@ WHERE {
 } GROUP BY ?autor ?autorLabel
 ```
 
-<img src="imagenes/mapa-autores.png">
+<img src="imagenes/mapa-autores.png" width="60%">
 
 ## Miembros de la International GLAM Labs Community
 La International GLAM Labs Community cuenta con un listado de miembros que se muestran en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma se puede obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
@@ -59,7 +59,7 @@ WHERE {
 } GROUP BY ?glamlab ?glamlabLabel
 ```
 
-<img src="imagenes/mapa-glamlabs.png">
+<img src="imagenes/mapa-glamlabs.png" width="60%">
 
 ## Proyectos basados en Jupyter Notebooks en instituciones GLAM
 Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en wikidata enlazando a las colecciones que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
@@ -81,14 +81,12 @@ WHERE
 }
 ```
 
-<img src="imagenes/graph-glam-labs-notebooks.png">
+<img src="imagenes/graph-glam-labs-notebooks.png" width="60%">
 
 ## National Library of Scotland
 En el marco del proyecto [National Librarian’s Research Fellowship in Digital Scholarship 2022-23](https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23), se transformaron varias colecciones digitales a la web semántica utilizando distintos vocabularios como [schema.org](https://schema.org/) y [BIBFRAME](https://www.loc.gov/bibframe/).
 
-<img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
-
-Los recursos de la colección [Movie Image Archive]() han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
+Los recursos de la colección [Movie Image Archive](https://data.nls.uk/data/metadata-collections/moving-image-archive/) han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
 
 ```
 #defaultView:Map
@@ -103,6 +101,8 @@ WHERE {
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 } GROUP BY ?r ?rLabel ?img
 ```
+
+<img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
 
 ## Consultas federadas
 
