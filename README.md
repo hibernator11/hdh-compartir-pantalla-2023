@@ -83,6 +83,27 @@ WHERE
 
 <img src="imagenes/graph-glam-labs-notebooks.png">
 
+## National Library of Scotland
+En el marco del proyecto [National Librarian’s Research Fellowship in Digital Scholarship 2022-23](https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23), se transformaron varias colecciones digitales a la web semántica utilizando distintos vocabularios como [schema.org](https://schema.org/) y [BIBFRAME](https://www.loc.gov/bibframe/).
+
+<img src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
+
+Los recursos de la colección [Movie Image Archive]() han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
+
+```
+#defaultView:Map
+PREFIX wd: <http://www.wikidata.org/entity/>
+SELECT ?r ?rLabel (SAMPLE(?image) as ?img) (SAMPLE(?location) as ?l)
+WHERE {   
+  VALUES ?r {wd:Q793283 wd:Q207257 wd:Q211091 wd:Q980084 wd:Q17582129 wd:Q1247435 wd:Q652539 wd:Q2421 wd:Q23436 wd:Q1061313 wd:Q189912 wd:Q530296 wd:Q81052 wd:Q202177 wd:Q54809 wd:Q786649 wd:Q664892 wd:Q1247396 wd:Q1147435 wd:Q9177476 wd:Q47134 wd:Q3643362 wd:Q4093 wd:Q206934 wd:Q550606 wd:Q864668 wd:Q100166 wd:Q123709 wd:Q203000 wd:Q80967 wd:Q978599 wd:Q204940 wd:Q182923 wd:Q207268 wd:Q1229763 wd:Q376914 wd:Q106652 wd:Q36405 wd:Q201149 wd:Q1247384  }.
+
+       ?r wdt:P625 ?location. # coordinates
+       OPTIONAL {?r wdt:P18 ?image}.
+          
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+} GROUP BY ?r ?rLabel ?img
+```
+
 ## Consultas federadas
 
 ## Información adicional
