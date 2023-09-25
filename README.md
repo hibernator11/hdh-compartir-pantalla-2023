@@ -112,12 +112,27 @@ SELECT ?workLabel WHERE {
   wd:Q165257 wdt:P2799 ?id 
   BIND(uri(concat("https://data.cervantesvirtual.com/person/", ?id)) as ?bvmcID) 
   SERVICE <http://data.cervantesvirtual.com/openrdf-sesame/repositories/data> {
-    ?bvmcID <http://rdaregistry.info/Elements/a/otherPFCManifestationOf> ?work .
+    ?bvmcID <http://rdaregistry.info/Elements/a/authorOf> ?work .
     ?work rdfs:label ?workLabel        
   }
 }
 ```
-[Obras de Lope de Vega (wd:Q165257)](https://w.wiki/7Yvd)
+[Obras de Lope de Vega (wd:Q165257)](https://w.wiki/7Yvu)
+
+
+```
+SELECT ?autor ?work ?workLabel WHERE {
+  ?autor wdt:P2799 ?id.
+  ?autor wdt:P19 wd:Q11959
+  BIND(uri(concat("https://data.cervantesvirtual.com/person/", ?id)) as ?bvmcID) 
+  SERVICE <http://data.cervantesvirtual.com/openrdf-sesame/repositories/data> {
+    ?bvmcID <http://rdaregistry.info/Elements/a/authorOf> ?work .
+    ?work rdfs:label ?workLabel        
+  }
+}Limit 100
+```
+
+[Obras de la BVMC publicadas por autores nacidos en Alicante](https://w.wiki/7Yvp)
 
 ## Información adicional
 
