@@ -86,7 +86,7 @@ WHERE
 ## National Library of Scotland
 En el marco del proyecto [National Librarian’s Research Fellowship in Digital Scholarship 2022-23](https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23), se transformaron varias colecciones digitales a la web semántica utilizando distintos vocabularios como [schema.org](https://schema.org/) y [BIBFRAME](https://www.loc.gov/bibframe/).
 
-<img src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
+<img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
 
 Los recursos de la colección [Movie Image Archive]() han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
 
