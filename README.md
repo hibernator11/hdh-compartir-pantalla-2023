@@ -44,6 +44,8 @@ La International GLAM Labs Community cuenta con un listado de miembros que se mu
 ## Proyectos basados en Jupyter Notebooks en instituciones GLAM
 Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en wikidata enlazando a las colecciones que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
 
+<img src="imagenes/graph-glam-labs-notebooks.png">
+
 ## Información adicional
 
 - Gustavo Candela. Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science. Just Accepted (2023). https://doi.org/10.1177/01655515231174386
