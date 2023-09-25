@@ -9,7 +9,7 @@ Proyecto presentado en la actividad HDH "Café con" con la Asociación de Humani
 
 ## Introducción
 
-Este proyecto para la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) Se introduce Wikidata como plataforma para facilitar el acceso, enriquecimiento y el aumento de la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos tabulares y visualizaciones.
+Este proyecto para la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) Se introduce Wikidata como plataforma para facilitar el acceso, enriquecimiento y la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos tabulares y visualizaciones.
 
 Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos.
 
