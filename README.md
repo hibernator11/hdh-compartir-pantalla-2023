@@ -132,7 +132,7 @@ SELECT ?autor ?work ?workLabel WHERE {
 }Limit 100
 ```
 
-[Obras de la BVMC publicadas por autores nacidos en Alicante](https://w.wiki/7Yvp)
+[Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
 ## Información adicional
 
