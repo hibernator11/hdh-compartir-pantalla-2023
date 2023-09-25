@@ -42,10 +42,44 @@ La International GLAM Labs Community cuenta con un listado de miembros que se mu
 
 <img src="imagenes/mapa-glamlabs.png">
 
+```
+#defaultView:Map
+SELECT distinct (SAMPLE(?image) as ?imageu) (SAMPLE(?logo) as ?logou) ?glamlabLabel (SAMPLE(?provinceLabel) as ?prov)  (SAMPLE(?website) as ?websiteu)
+(SAMPLE(?location) as ?locationu) ?glamlab
+WHERE {   
+       ?glamlab wdt:P463 wd:Q72936141. 
+        OPTIONAL {?glamlab wdt:P625 ?location.} # coordinates     
+        OPTIONAL {?glamlab wdt:P159 ?headquarters. ?headquarters wdt:P625 ?location.}
+        OPTIONAL {?glamlab wdt:P131 ?province.}     
+        OPTIONAL {?glamlab wdt:P18 ?image .}      
+        OPTIONAL {?glamlab wdt:P154 ?logo .}      
+        OPTIONAL {?glamlab wdt:P856 ?website .}  
+          
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+} group by ?glamlab ?glamlabLabel
+```
+
 ## Proyectos basados en Jupyter Notebooks en instituciones GLAM
 Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en wikidata enlazando a las colecciones que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
 
 <img src="imagenes/graph-glam-labs-notebooks.png">
+
+```
+#defaultView:Graph
+SELECT ?nbs ?nbsLabel ?nbspic ?linkTo ?linkToLabel ?linknb ?pic
+WHERE
+{
+  values ?nbs {wd:Q111396450 wd:Q111396660 wd:Q111411199 wd:Q111421153 wd:Q111421205 wd:Q111450546}
+  ?nbs wdt:P2283 ?linkTo .
+  ?linkTo wdt:P856 ?linknb .
+  OPTIONAL {?nbs wdt:P154 ?nbspic .}
+  OPTIONAL {?linkTo wdt:P127 ?owner. ?owner wdt:P154 ?pic .}
+  OPTIONAL {?linkTo wdt:P126 ?manteiner. ?manteiner wdt:P154 ?pic .}
+  OPTIONAL {?linkTo wdt:P154 ?pic .}
+  OPTIONAL {?linkTo wdt:P18 ?pic .} 
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "en,fr,es" }
+}
+```
 
 ## Información adicional
 
