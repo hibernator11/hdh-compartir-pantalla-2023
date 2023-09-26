@@ -1,5 +1,5 @@
 # Uso de Wikidata en bibliotecas
-Proyecto presentado en la actividad HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas
+Proyecto presentado en la actividad [HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas](https://humanidadesdigitaleshispanicas.es/actividades/cafe-con/)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
@@ -9,9 +9,9 @@ Proyecto presentado en la actividad HDH "Café con" con la Asociación de Humani
 
 ## Introducción
 
-Este proyecto para la actividad [Café con](https://humanidadesdigitaleshispanicas.es/cafe-con-gustavo-candela-4-de-abril-de-2023/) Se introduce Wikidata como plataforma para facilitar el acceso, enriquecimiento y la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos tabulares y visualizaciones.
+Este proyecto forma parte de la actividad "Café con" que introduce Wikidata en el ámbito bibliotecario como plataforma para facilitar el acceso, enriquecimiento y la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos y recursos gráficos.
 
-Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos.
+Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y la [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos como sentencias federadas.
 
 
 ## Datos abiertos y enlazados
@@ -23,7 +23,7 @@ Gracias al enriquecimiento, existe la posibilidad de explorar nuevas formas de a
 <img src="imagenes/buscador.png" width="60%">
 
 ## Representación de las nacionalidades de los autores
-El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. El siguiente [enlace](https://w.wiki/6WRC) permite ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
+El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. En este [enlace](https://w.wiki/6WRC) se puede ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
 
 ```
 #defaultView:Map
@@ -40,7 +40,7 @@ WHERE {
 <img src="imagenes/mapa-autores.png" width="60%">
 
 ## Miembros de la International GLAM Labs Community
-La International GLAM Labs Community cuenta con un listado de miembros que se muestran en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma se puede obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
+La International GLAM Labs Community cuenta con un listado de miembros que se puede consultar en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs Community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma podemos obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
 
 ```
 #defaultView:Map
@@ -62,7 +62,7 @@ WHERE {
 <img src="imagenes/mapa-glamlabs.png" width="60%">
 
 ## Proyectos basados en Jupyter Notebooks en instituciones GLAM
-Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en wikidata enlazando a las colecciones que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
+Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos que se encuentra disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en Wikidata enlazando a las colecciones digitales que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
 
 ```
 #defaultView:Graph
@@ -86,7 +86,7 @@ WHERE
 ## National Library of Scotland
 En el marco del proyecto [National Librarian’s Research Fellowship in Digital Scholarship 2022-23](https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23), se transformaron varias colecciones digitales a la web semántica utilizando distintos vocabularios como [schema.org](https://schema.org/) y [BIBFRAME](https://www.loc.gov/bibframe/).
 
-Los recursos de la colección [Movie Image Archive](https://data.nls.uk/data/metadata-collections/moving-image-archive/) han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
+Los recursos de la colección [Movie Image Archive](https://data.nls.uk/data/metadata-collections/moving-image-archive/) han sido enriquecidos con Wikidata para crear enlaces a localizaciones proporcionados por los metadatos originales. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/5qa4).
 
 ```
 #defaultView:Map
@@ -105,7 +105,7 @@ WHERE {
 <img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
 
 ## Consultas federadas
-Las consultas federadas permiten acceder a otros repositorios de datos para recuperar y filtrar información. Por ejemplo, el repositorio de datos abiertos y enlazados de la Biblioteca Virtual Miguel de Cervantes está federado con Wikidata. Esto significa que desde Wikidata y a través del lenguaje de consulta SPARQL, podemos acceder al repositorio de la BVMC. Por ejemplo, podríamos estar interesados en recuperar las obras en la BVMC a partir de un autor de Wikidata. También, nos podría interesar recuperar las obras de autores que han nacido en país particular. A continuación, se incluyen varios ejemplos.
+Las consultas federadas permiten acceder a otros repositorios de datos para recuperar y filtrar información. Por ejemplo, el repositorio de datos abiertos y enlazados de la [Biblioteca Virtual Miguel de Cervantes está federado con Wikidata](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Federation_report). Esto significa que desde Wikidata y a través del lenguaje de consulta SPARQL, podemos acceder al repositorio de la BVMC. Por ejemplo, podríamos estar interesados en recuperar las obras en la BVMC a partir de un autor de Wikidata. También, nos podría interesar recuperar las obras de autores que han nacido en un país particular. A continuación, se incluyen varios ejemplos.
 
 ```
 SELECT ?workLabel WHERE {
@@ -136,10 +136,10 @@ SELECT ?autor ?work ?workLabel WHERE {
 
 ## Información adicional
 
-- Gustavo Candela. Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science. Just Accepted (2023). https://doi.org/10.1177/01655515231174386
-- Gustavo Candela. An automatic data quality approach to assess semantic data from cultural heritage institutions. J. Assoc. Inf. Sci. Technol. 74(7): 866-878 (2023). https://doi.org/10.1002/asi.24761
-- Gustavo Candela, Javier Pereda, Dolores Sáez, Pilar Escobar, Alexander Sánchez, Andrés Villa Torres, Albert A. Palacios, Kelly McDonough, and Patricia Murrieta-Flores. 2023. An ontological approach for unlocking the Colonial Archive. J. Comput. Cult. Herit. Just Accepted (April 2023). https://doi.org/10.1145/3594727
-- Sally Chambers et al. (2023). Position Statements -> Collections as Data: State of the field and future directions (Version 1). Zenodo. https://doi.org/10.5281/zenodo.7897735
+- Candela, G. Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science. Just Accepted (2023). https://doi.org/10.1177/01655515231174386
+- Candela, G. An automatic data quality approach to assess semantic data from cultural heritage institutions. J. Assoc. Inf. Sci. Technol. 74(7): 866-878 (2023). https://doi.org/10.1002/asi.24761
+- Candela, G., Pereda, J., Sáez, D., Escobar, P. Sánchez, A., Villa-Torres, A., Palacios, A., McDonough, K. y Murrieta-Flores, P. 2023. An ontological approach for unlocking the Colonial Archive. J. Comput. Cult. Herit. Just Accepted (April 2023). https://doi.org/10.1145/3594727
+- Chambers, S. et al. (2023). Position Statements -> Collections as Data: State of the field and future directions (Version 1). Zenodo. https://doi.org/10.5281/zenodo.7897735
 - Candela, G., Chambers,S., & Sherratt, T. (2023). An approach to assess the quality of Jupyter projects published by GLAM institutions. Journal of the Association for Information Science and Technology, 1–15. https://doi.org/10.1002/asi.24835
 - [BVMC Labs](https://data.cervantesvirtual.com)
 - [Collections as Data](https://collectionsasdata.github.io/)
@@ -152,6 +152,6 @@ SELECT ?autor ?work ?workLabel WHERE {
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
 
 ## Agradecimientos
-Este proyecto es el resultado de varios años de trabajo en el marco de la [Biblioteca Virtual Miguel de Cervantes](https://www.cervantesvirtual.com/), en colaboración con la [International GLAM Labs Community](https://glamlabs.io), [Impact Centre of Competence](https://www.digitisation.eu/), la [Biblioteca Nacional de Escocia](https://data.nls.uk/projects/the-national-librarians-research-fellowship-in-digital-scholarship-2022-23/), la [Universidad de Lancaster](https://unlockingarchives.com), Wikimedia España, Wikimedia UK y numerosos investigadores internacionales de diferentes instituciones de patrimonio cultural y académico.
+Este proyecto es el resultado de varios años de trabajo en el marco de la [Biblioteca Virtual Miguel de Cervantes](https://www.cervantesvirtual.com/), en colaboración con la [International GLAM Labs Community](https://glamlabs.io), [Impact Centre of Competence](https://www.digitisation.eu/), la [Biblioteca Nacional de Escocia](https://data.nls.uk/projects/the-national-librarians-research-fellowship-in-digital-scholarship-2022-23/), la [Universidad de Lancaster](https://unlockingarchives.com), [Wikimedia España](https://www.wikimedia.es/), Wikimedia UK y numerosos investigadores internacionales de diferentes instituciones de patrimonio cultural y académico.
 
 
