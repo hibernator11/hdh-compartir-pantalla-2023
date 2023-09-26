@@ -1,5 +1,5 @@
 # Uso de Wikidata en bibliotecas
-Proyecto presentado en la actividad [HDH "Café con" con la Asociación de Humanidades Digitales Hispánicas](https://humanidadesdigitaleshispanicas.es/actividades/cafe-con/)
+Proyecto presentado en la actividad [HDH "Café con"](https://humanidadesdigitaleshispanicas.es/actividades/cafe-con/) con la Asociación de Humanidades Digitales Hispánicas]
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
