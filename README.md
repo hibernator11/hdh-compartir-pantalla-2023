@@ -134,6 +134,35 @@ SELECT ?autor ?work ?workLabel WHERE {
 
 [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
+## Propiedades que enlazan a repositorios de datos (GLAM) en Wikidata
+
+Las propiedades que enlazan a organizaciones GLAM tienen asciada la propiedad wdt:P31 (instancia_de) con valor wd:Q21745557. De esta forma podemos recuperar los tipos de entidades en Wikidata de los recursos que tienen asociada esta propiedad.
+
+```
+SELECT distinct ?type ?typeLabel
+WHERE {
+    ?org wdt:P31 ?type .
+    ?org wdt:P1687 ?property . ?property wdt:P31 wd:Q21745557
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} LIMIT 20
+```
+
+[Tipos de entidades](https://w.wiki/7eq4)
+
+
+A continuación, seleccionamos los valores de los tipos que queramos incluir en nuestra sentencia:
+
+```
+SELECT *
+WHERE {
+    VALUES ?type {wd:Q7075 wd:Q166118 wd:Q1007870 wd:Q33506 wd:Q212805 wd:Q207694 wd:Q856638 wd:Q1789476}.
+    ?org wdt:P31 ?type .
+    ?org wdt:P1687 ?property .
+} LIMIT 1000
+```
+[Propiedades](https://w.wiki/7eq9)
+
+
 ## Información adicional
 
 - Candela, G. Towards a semantic approach in GLAM Labs: The case of the Data Foundry at the National Library of Scotland. Journal of Information Science. Just Accepted (2023). https://doi.org/10.1177/01655515231174386
