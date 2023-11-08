@@ -31,36 +31,6 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png" width="60%">
 
-## Propiedades que enlazan a repositorios de datos (GLAM) en Wikidata
-
-Las propiedades que enlazan a organizaciones GLAM tienen asciada la propiedad wdt:P31 (instancia_de) con valor wd:Q21745557. De esta forma podemos recuperar los tipos de entidades en Wikidata de los recursos que tienen asociada esta propiedad.
-
-```
-SELECT DISTINCT ?tipo ?tipoLabel
-WHERE {
-    ?org wdt:P31 ?tipo .
-    ?org wdt:P1687 ?propiedad . 
-    ?propiedad wdt:P31 wd:Q21745557
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-} LIMIT 20
-```
-
-[Tipos de entidades que tiene una propiedad en Wikidata]([https://w.wiki/7eq4](https://w.wiki/85$3))
-
-
-A continuación, seleccionamos los valores de los tipos que queramos incluir en nuestra sentencia:
-
-```
-SELECT *
-WHERE {
-    VALUES ?type {wd:Q7075 wd:Q166118 wd:Q1007870 wd:Q33506 wd:Q212805 wd:Q207694 wd:Q856638 wd:Q1789476}.
-    ?org wdt:P31 ?type .
-    ?org wdt:P1687 ?property .
-} LIMIT 1000
-```
-[Propiedades](https://w.wiki/7eq9)
-
-
 ## Miembros de la International GLAM Labs Community
 La International GLAM Labs Community cuenta con un listado de miembros que se puede consultar en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs Community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma podemos obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
 
