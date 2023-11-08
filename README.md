@@ -1,5 +1,5 @@
 # Uso de Wikidata en bibliotecas
-Proyecto presentado en la actividad ["Café con"](https://humanidadesdigitaleshispanicas.es/actividades/cafe-con/) con la Asociación de Humanidades Digitales Hispánicas
+Proyecto presentado en la actividad ["Compartir pantalla"](https://humanidadesdigitaleshispanicas.es/compartir-pantalla-con-gustavo-candela-14-de-noviembre-de-2023/) con la Asociación de Humanidades Digitales Hispánicas
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
@@ -9,9 +9,9 @@ Proyecto presentado en la actividad ["Café con"](https://humanidadesdigitaleshi
 
 ## Introducción
 
-Este proyecto forma parte de la actividad "Café con" que introduce Wikidata en el ámbito bibliotecario como plataforma para facilitar el acceso, enriquecimiento y la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos y recursos gráficos.
+Este proyecto forma parte de la actividad "Compartir pantalla" que introduce Wikidata en el ámbito bibliotecario como plataforma para facilitar el acceso, enriquecimiento y la visibilidad a través de la edición de recursos y el uso de SPARQL para recuperar información en forma de datos y recursos gráficos.
 
-Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y la [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos como sentencias federadas.
+Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y la [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos como por ejemplo sentencias federadas y creación de datasets.
 
 
 ## Datos abiertos y enlazados
