@@ -31,6 +31,8 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png" width="60%">
 
+Un ejemplo adicional podría consistir en filtrar por una localidad concreta: [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
+
 ## Miembros de la International GLAM Labs Community
 La International GLAM Labs Community cuenta con un listado de miembros que se puede consultar en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs Community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma podemos obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
 
@@ -102,32 +104,11 @@ SELECT ?autor ?work ?workLabel WHERE {
 }Limit 100
 ```
 
+## Otros ejemplos
 
-## Proyectos basados en Jupyter Notebooks en instituciones GLAM
-Las instituciones GLAM han comenzado a utilizar Jupyter Notebooks para reutilizar y documentar el uso de sus colecciones digitales que permiten el acceso computacional. Recientemente, la International GLAM Labs Community creó una nueva sección para este tipo de proyectos que se encuentra disponible en https://glamlabs.io/computational-access-to-digital-collections/. Para cada uno de ellos se creó una instancia en Wikidata enlazando a las colecciones digitales que utiliza. Consultar el [siguiente enlace](https://doi.org/10.1002/asi.24835) para más información.
-
-```
-#defaultView:Graph
-SELECT ?nbs ?nbsLabel ?nbspic ?linkTo ?linkToLabel ?linknb ?pic
-WHERE
-{
-  values ?nbs {wd:Q111396450 wd:Q111396660 wd:Q111411199 wd:Q111421153 wd:Q111421205 wd:Q111450546}
-  ?nbs wdt:P2283 ?linkTo .
-  ?linkTo wdt:P856 ?linknb .
-  OPTIONAL {?nbs wdt:P154 ?nbspic .}
-  OPTIONAL {?linkTo wdt:P127 ?owner. ?owner wdt:P154 ?pic .}
-  OPTIONAL {?linkTo wdt:P126 ?manteiner. ?manteiner wdt:P154 ?pic .}
-  OPTIONAL {?linkTo wdt:P154 ?pic .}
-  OPTIONAL {?linkTo wdt:P18 ?pic .} 
-  SERVICE wikibase:label {bd:serviceParam wikibase:language "en,fr,es" }
-}
-```
-
-<img src="imagenes/graph-glam-labs-notebooks.png" width="60%">
-
-[Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
-
-
+- Creando datasets a partir de Wikidata: https://github.com/hibernator11/wikidata-review
+- Calidad de datos abiertos y enlazados con SPARQL
+- Proyectos basados en Jupyter Notebooks en instituciones GLAM https://glamlabs.io/computational-access-to-digital-collections/
 
 ## Información adicional
 
