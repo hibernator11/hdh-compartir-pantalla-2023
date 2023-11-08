@@ -36,15 +36,16 @@ WHERE {
 Las propiedades que enlazan a organizaciones GLAM tienen asciada la propiedad wdt:P31 (instancia_de) con valor wd:Q21745557. De esta forma podemos recuperar los tipos de entidades en Wikidata de los recursos que tienen asociada esta propiedad.
 
 ```
-SELECT distinct ?type ?typeLabel
+SELECT DISTINCT ?tipo ?tipoLabel
 WHERE {
-    ?org wdt:P31 ?type .
-    ?org wdt:P1687 ?property . ?property wdt:P31 wd:Q21745557
+    ?org wdt:P31 ?tipo .
+    ?org wdt:P1687 ?propiedad . 
+    ?propiedad wdt:P31 wd:Q21745557
     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 } LIMIT 20
 ```
 
-[Tipos de entidades](https://w.wiki/7eq4)
+[Tipos de entidades que tiene una propiedad en Wikidata]([https://w.wiki/7eq4](https://w.wiki/85$3))
 
 
 A continuación, seleccionamos los valores de los tipos que queramos incluir en nuestra sentencia:
