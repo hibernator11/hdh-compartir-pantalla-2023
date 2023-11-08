@@ -44,8 +44,8 @@ La International GLAM Labs Community cuenta con un listado de miembros que se pu
 
 ```
 #defaultView:Map
-SELECT distinct (SAMPLE(?image) as ?imageu) (SAMPLE(?logo) as ?logou) ?glamlabLabel (SAMPLE(?provinceLabel) as ?prov)  (SAMPLE(?website) as ?websiteu)
-(SAMPLE(?location) as ?locationu) ?glamlab
+SELECT distinct (SAMPLE(?image) as ?imageu) (SAMPLE(?logo) as ?logou) (SAMPLE(?provinceLabel) as ?prov)  (SAMPLE(?website) as ?websiteu)
+(SAMPLE(?location) as ?locationu) ?glamlab ?glamlabLabel
 WHERE {   
        ?glamlab wdt:P463 wd:Q72936141. 
         OPTIONAL {?glamlab wdt:P625 ?location.} # coordinates     
