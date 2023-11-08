@@ -57,7 +57,7 @@ WHERE {
 ## National Library of Scotland
 En colaboración con la National Library of Scotland y en el marco del proyecto [National Librarian’s Research Fellowship in Digital Scholarship 2022-23](https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23), se transformaron varias colecciones digitales a la Web Semántica utilizando vocabularios como [schema.org](https://schema.org/) y [BIBFRAME](https://www.loc.gov/bibframe/).
 
-Los recursos de la colección [Movie Image Archive](https://data.nls.uk/data/metadata-collections/moving-image-archive/) se enriquecieron con Wikidata con el objetivo de crear enlaces a localizaciones proporcionados por los metadatos originales que mayoritariamente nombraban localizaciones en Escocia. La sentencia se puede ejecutar en el siguiente [enlace]([https://w.wiki/5qa4](https://w.wiki/85$N)).
+Los recursos de la colección [Movie Image Archive](https://data.nls.uk/data/metadata-collections/moving-image-archive/) se enriquecieron con Wikidata con el objetivo de crear enlaces a localizaciones proporcionados por los metadatos originales que mayoritariamente nombraban localizaciones en Escocia. La sentencia se puede ejecutar en el siguiente [enlace](https://w.wiki/85$N). 
 
 ```
 #defaultView:Map
