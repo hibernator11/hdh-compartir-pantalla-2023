@@ -89,6 +89,7 @@ SELECT ?workLabel WHERE {
 ```
 [Obras de Lope de Vega (wd:Q165257)](https://w.wiki/7Yvu)
 
+Un ejemplo adicional podría consistir en filtrar por una localidad concreta: [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
 ```
 SELECT ?autor ?work ?workLabel WHERE {
@@ -101,8 +102,6 @@ SELECT ?autor ?work ?workLabel WHERE {
   }
 }Limit 100
 ```
-
-Un ejemplo adicional podría consistir en filtrar por una localidad concreta: [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
 ## Otros ejemplos
 
