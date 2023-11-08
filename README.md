@@ -1,5 +1,5 @@
 # Uso de Wikidata en bibliotecas
-Proyecto presentado en la actividad ["Compartir pantalla"](https://humanidadesdigitaleshispanicas.es/compartir-pantalla-con-gustavo-candela-14-de-noviembre-de-2023/) con la Asociación de Humanidades Digitales Hispánicas
+Proyecto presentado en la actividad ["Compartir pantalla"](https://humanidadesdigitaleshispanicas.es/compartir-pantalla-con-gustavo-candela-14-de-noviembre-de-2023/) con la [Asociación de Humanidades Digitales Hispánicas](https://humanidadesdigitaleshispanicas.es/).
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hibernator11/hdh-cafe-con-2023/HEAD)
 
