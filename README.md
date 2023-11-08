@@ -69,7 +69,8 @@ WHERE {
        OPTIONAL {?lugar wdt:P18 ?imagen}.
           
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-} GROUP BY ?lugar ?lugarLabel ?img```
+} GROUP BY ?lugar ?lugarLabel ?img
+```
 
 <img width="60%" src="https://github.com/NLS-Digital-Scholarship/nls-fellowship-2022-23/blob/master/images/map-visualisation.png">
 
