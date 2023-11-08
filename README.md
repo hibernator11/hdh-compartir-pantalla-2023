@@ -31,8 +31,6 @@ WHERE {
 
 <img src="imagenes/mapa-autores.png" width="60%">
 
-Un ejemplo adicional podría consistir en filtrar por una localidad concreta: [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
-
 ## Miembros de la International GLAM Labs Community
 La International GLAM Labs Community cuenta con un listado de miembros que se puede consultar en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs Community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma podemos obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
 
@@ -103,6 +101,8 @@ SELECT ?autor ?work ?workLabel WHERE {
   }
 }Limit 100
 ```
+
+Un ejemplo adicional podría consistir en filtrar por una localidad concreta: [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
 ## Otros ejemplos
 
