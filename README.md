@@ -14,14 +14,6 @@ Este proyecto forma parte de la actividad "Compartir pantalla" que introduce Wik
 Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata introduciendo los diferentes comandos e instrucciones, visualizaciones reales utilizadas en la web de [Biblioteca Virtual Miguel de Cervantes](https://data.cervantesvirtual.com/datos-enlazados) y la [International GLAM Labs Community](https://glamlabs.io), y otros ejemplos ilustrativos como por ejemplo sentencias federadas y creación de datasets.
 
 
-## Datos abiertos y enlazados
-
-La Biblioteca Virtual Miguel de Cervantes publicó su catálogo de metadatos como [datos abiertos y enlazados](https://data.cervantesvirtual.com/datos-enlazados) (en inglés, Linked Open Data) utilizando como vocabulario principal [Resource, Description and Access](http://www.rdaregistry.info/). El repositorio se ha enriquecido con [Wikidata](https://www.wikidata.org) a través de diferentes propiedades creadas con el objetivo de enlazar [autores](https://www.wikidata.org/wiki/Property:P2799) y [obras](https://www.wikidata.org/wiki/Property:P3976).
-
-Gracias al enriquecimiento, existe la posibilidad de explorar nuevas formas de acceso al catálogo por medio de nuevas propiedades proporcionadas por Wikidata (p. ej. nacionalidad o movimiento del autor) o visualizaciones basadas en el uso de gráficas y mapas.
-
-<img src="imagenes/buscador.png" width="60%">
-
 ## Representación de las nacionalidades de los autores
 El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. En este [enlace](https://w.wiki/6WRC) se puede ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
 
@@ -38,6 +30,35 @@ WHERE {
 ```
 
 <img src="imagenes/mapa-autores.png" width="60%">
+
+## Propiedades que enlazan a repositorios de datos (GLAM) en Wikidata
+
+Las propiedades que enlazan a organizaciones GLAM tienen asciada la propiedad wdt:P31 (instancia_de) con valor wd:Q21745557. De esta forma podemos recuperar los tipos de entidades en Wikidata de los recursos que tienen asociada esta propiedad.
+
+```
+SELECT distinct ?type ?typeLabel
+WHERE {
+    ?org wdt:P31 ?type .
+    ?org wdt:P1687 ?property . ?property wdt:P31 wd:Q21745557
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} LIMIT 20
+```
+
+[Tipos de entidades](https://w.wiki/7eq4)
+
+
+A continuación, seleccionamos los valores de los tipos que queramos incluir en nuestra sentencia:
+
+```
+SELECT *
+WHERE {
+    VALUES ?type {wd:Q7075 wd:Q166118 wd:Q1007870 wd:Q33506 wd:Q212805 wd:Q207694 wd:Q856638 wd:Q1789476}.
+    ?org wdt:P31 ?type .
+    ?org wdt:P1687 ?property .
+} LIMIT 1000
+```
+[Propiedades](https://w.wiki/7eq9)
+
 
 ## Miembros de la International GLAM Labs Community
 La International GLAM Labs Community cuenta con un listado de miembros que se puede consultar en forma de mapa en su [web](https://glamlabs.io/member-map/). Cada miembro dispone de una entrada en Wikidata que contiene una propiedad ["miembro de"](https://www.wikidata.org/wiki/Property:P463) y con valor el identificador de la International GLAM Labs Community [Q72936141](https://www.wikidata.org/wiki/Q72936141). De esta forma podemos obtener como resultado de una sentencia SPARQL un mapa representando a sus miembros.
@@ -136,33 +157,6 @@ WHERE
 
 [Obras de la BVMC publicadas por autores nacidos en Alicante (wd:Q11959)](https://w.wiki/7Yvp)
 
-## Propiedades que enlazan a repositorios de datos (GLAM) en Wikidata
-
-Las propiedades que enlazan a organizaciones GLAM tienen asciada la propiedad wdt:P31 (instancia_de) con valor wd:Q21745557. De esta forma podemos recuperar los tipos de entidades en Wikidata de los recursos que tienen asociada esta propiedad.
-
-```
-SELECT distinct ?type ?typeLabel
-WHERE {
-    ?org wdt:P31 ?type .
-    ?org wdt:P1687 ?property . ?property wdt:P31 wd:Q21745557
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-} LIMIT 20
-```
-
-[Tipos de entidades](https://w.wiki/7eq4)
-
-
-A continuación, seleccionamos los valores de los tipos que queramos incluir en nuestra sentencia:
-
-```
-SELECT *
-WHERE {
-    VALUES ?type {wd:Q7075 wd:Q166118 wd:Q1007870 wd:Q33506 wd:Q212805 wd:Q207694 wd:Q856638 wd:Q1789476}.
-    ?org wdt:P31 ?type .
-    ?org wdt:P1687 ?property .
-} LIMIT 1000
-```
-[Propiedades](https://w.wiki/7eq9)
 
 
 ## Información adicional
