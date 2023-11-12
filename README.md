@@ -15,18 +15,18 @@ Además, se incluyen ejemplos de sentencias SPARQL proporcionados por Wikidata i
 
 
 ## Representación de las nacionalidades de los autores
-El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. En este [enlace](https://w.wiki/6WRC) se puede ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
+El siguiente ejemplo muestra las nacionalidades de los autores de Wikidata enlazados a la Biblioteca Virtual Miguel de Cervantes. En este [enlace](https://w.wiki/88PR) se puede ejecutar la siguiente sentencia SPARQL en el editor de consultas de Wikidata.
 
 ```
 #defaultView:Map
-SELECT DISTINCT ?autor ?autorLabel (SAMPLE(?imagen) as ?img) (SAMPLE(?coordenadas) as ?co)
+SELECT DISTINCT ?autor ?autorLabel (SAMPLE(?imagen) as ?img) ?coordenadas
 WHERE {   
        ?autor wdt:P2799 ?idbvmc.
        ?autor wdt:P27 ?pais .
-       OPTIONAL {?pais wdt:P625 ?coordenadas.}
+       ?pais wdt:P625 ?coordenadas.
        OPTIONAL {?autor wdt:P18 ?imagen .}      
     SERVICE wikibase:label { bd:serviceParam wikibase:language "es" }
-} GROUP BY ?autor ?autorLabel
+} GROUP BY ?autor ?autorLabel ?coordenadas
 ```
 
 <img src="imagenes/mapa-autores.png" width="60%">
